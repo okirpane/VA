@@ -30,7 +30,7 @@ body{
     color: transparent;
     background: linear-gradient(to left,var(--infoGreen),var(--interact),var(--interact),var(--infoGreen));
     background-size: 1000px 100%;
-    animation: bg 25s ease-in-out infinite;
+    animation: bg 30s ease-in-out infinite;
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -68,14 +68,13 @@ body{
     background-color: var(--interact)
 }
 #featureList{
-    width: 80%;
-    display: flex;
+    width: 85%;
+    columns: 3 5px;
+    /* column-gap: 50px; */
     margin-bottom: 50px;
 }
 .ft{
-    margin-right: 50px;
-    flex: 1;
-    background-color: rgb(209, 206, 206);
+    background-color: #73bfbb1f;
     width: 300px;
     height: 425px;
 }
