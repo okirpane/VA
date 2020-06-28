@@ -1,0 +1,90 @@
+:root {
+	font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    --interact: #FEDB7A;
+    --infoGreen: #73bfbb;
+    --coolGreen: rgb(127, 241, 127);
+
+}
+body{
+    margin: 0;
+    margin-left: 12.5vw;
+}
+
+#logoContainer{
+    margin-top: 12.8vh;
+}
+#logo{
+    width: auto;
+    height: 50px;
+}
+#tagline{
+    color: #45666B;
+    margin-top: 50px;
+    font-size: 78px;
+    line-height: 80px;
+    margin-bottom: 50px;
+    
+}
+.gradient {
+    color: transparent;
+    background: linear-gradient(to left,var(--infoGreen),var(--interact),var(--interact),var(--infoGreen));
+    background-size: 1000px 100%;
+    animation: bg 25s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#buttonContainer{
+    width: 50vw;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+}
+#docIndex{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #45666B;
+    font-weight: 700;
+    
+    width: 300px;
+    height: 60px;
+    background-color: var(--interact);
+}
+#tryVaruna{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #45666B;
+    font-weight: 700;
+    
+    width: 300px;
+    height: 60px;
+    background-color: var(--interact)
+}
+#featureList{
+    width: 80%;
+    display: flex;
+    margin-bottom: 50px;
+}
+.ft{
+    margin-right: 50px;
+    flex: 1;
+    background-color: rgb(209, 206, 206);
+    width: 300px;
+    height: 425px;
+}
+#emailLink{
+    color: #45666B;
+    font-weight: 700;
+    font-size: 78px;
+
+    width: 70%;
+    border-bottom: 7px solid var(--interact);
+    margin-bottom: 100px;
+}
