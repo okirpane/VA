@@ -39,14 +39,14 @@ body{
 #buttonContainer{
     width: 64%;
     margin-bottom: 50px;
-    display: flex
+    /* display: flex */
 }
 #docIndexText{
-    margin-top: 2%;
+    /* margin-top: 2%; */
     margin-left: 20px;
 }
 #tryVarunaText{
-    margin-top: 2%;
+    /* margin-top: 2%; */
     margin-left: 20px;
 }
 #docIndex{
@@ -77,10 +77,8 @@ body{
 
 
 #featureList{
-    width: 100%;
-    display: flex;
-    /* columns: 3; */
-    /* column-gap: 50px; */
+    /* width: 100%; */
+    /* display: flex; */
     margin-bottom: 50px;
 }
 .ft{
@@ -88,7 +86,17 @@ body{
     margin-right: 2.6vw;
     background-color: #73bfbb1f;
     width: 100%;
-    height: 425px;
+    /* height: 425px; */
+}
+#imgIllus{
+    /* margin-top: 50px; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#imgText{
+    color: #45666B;
+    text-align: center;
 }
 
 
@@ -106,16 +114,57 @@ body{
     transition: 0.3s ease-in-out;
 }
 #emailLink:hover{
-    color: var(--interact);
-    transition: 0.3s ease-in-out;
+    color: var(--infoGreen);
+    transition: 0.2s ease-in-out;
 }
-#imgIllus{
-    margin-top: 50px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+
+/* large */
+@media only screen and (min-width: 900px) {
+    #buttonContainer{
+        display: flex;
+    }
+    #docIndexText{
+        margin-top: 2%;
+    }
+    #tryVarunaText{
+        margin-top: 2%;
+    }
+
+    #featureList{
+        display: flex;
+        width: 100%;
+    }
+    .ft{
+        height: 425px;
+    }
+    #imgIllus{
+        margin-top: 50px;
+    }
 }
-#imgText{
-    color: #45666B;
-    text-align: center;
+
+/* small */
+@media only screen and (max-width: 899px) {
+    #buttonContainer{
+        display: block;
+    }
+    #docIndexText{
+        margin-top: 4%;
+        padding-top: 2%;
+    }
+    #tryVarunaText{
+        margin-top: 4%;
+        padding-top: 2%;
+    }
+
+    #featureList{
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+    .ft{
+        height: 375px;
+    }
+    img#lockIllus {
+        margin-top: 50px;
+    }
 }
