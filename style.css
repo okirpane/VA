@@ -24,7 +24,7 @@ body{
     font-size: 78px;
     line-height: 80px;
     margin-bottom: 50px;
-    
+    margin-right: 50px;
 }
 .gradient {
     color: transparent;
@@ -180,5 +180,17 @@ body{
     #imgText{
         margin-left: 50px;
         text-align: left;
+    }
+}
+
+/* smaller */
+@media only screen and (max-width: 642px){
+    #tagline{
+        font-size: 50px;
+        line-height: 55px;
+    }
+    #emailLink{
+        font-size: 50px;
+        line-height: 55px;
     }
 }
