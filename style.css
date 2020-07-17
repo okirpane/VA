@@ -9,7 +9,9 @@ body{
     margin: 0;
     margin-left: 10vw;
 }
-
+#illus{
+    min-width: 200px;
+}
 
 #logoContainer{
     margin-top: 12.8vh;
