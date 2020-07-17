@@ -37,35 +37,14 @@ body{
 
 
 #buttonContainer{
-    width: 64%;
-    margin-bottom: 50px;
+    width: 30%;
+    margin-bottom: 100px;
     /* display: flex */
 }
-#docIndexText{
-    /* margin-top: 2%; */
-    margin-left: 20px;
-}
-#tryVarunaText{
-    /* margin-top: 2%; */
-    margin-left: 20px;
-}
-#docIndex{
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin-right: 2.6vw;
-
-    color: #45666B;
-    font-weight: 700;
-    
-    width: 100%;
-    height: 60px;
-    background-color: var(--interact);
-}
 #tryVaruna{
-    display: block;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 
     color: #45666B;
     font-weight: 700;
@@ -74,17 +53,25 @@ body{
     height: 60px;
     background-color: var(--interact)
 }
+#tryVaruna:hover{
+    cursor: pointer;
+}
+#tryVarunaText{
+    width: auto;
+    height: auto;
+}
 
 
 #featureList{
     /* width: 100%; */
     /* display: flex; */
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .ft{
     display: block;
     margin-right: 2.6vw;
-    background-color: #73bfbb1f;
+    background-color: #f8f8f8;
+    border-radius: 7px;
     width: 100%;
     /* height: 425px; */
 }
@@ -98,9 +85,43 @@ body{
     color: #45666B;
     /* text-align: center; */
 }
+#description {
+    margin-top: 100px;
+    width: 100%;
+    color: #45666B;
+    margin-bottom: 50px;
+}
+.line{
+    display: flex;
+    margin-bottom: 30px;
+}
 
+#privacy, #scheduling, #user{
+    width:45%;
+}
+#privacy{
+    margin-left: 5%;
+}
+a {
+    color: var(--infoGreen);
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+a:hover{
+    color: var(--interact);
+}
+#description_title{
+    /* font-size: 40px; */
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+#description_text{
+    font-size: 25px;
+    
+}
 
 #emailLink{
+    margin-top: 100px;
     color: #45666B;
     font-weight: 500;
     font-size: 78px;
@@ -111,11 +132,11 @@ body{
     border-bottom: 7px solid var(--interact);
     margin-bottom: 100px;
 
-    transition: 0.3s ease-in-out;
 }
 #emailLink:hover{
     color: var(--infoGreen);
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 /* large */
@@ -123,11 +144,8 @@ body{
     #buttonContainer{
         display: flex;
     }
-    #docIndexText{
-        margin-top: 2%;
-    }
     #tryVarunaText{
-        margin-top: 2%;
+        margin-left: 5%;
     }
 
     #featureList{
@@ -151,35 +169,33 @@ body{
 @media only screen and (max-width: 899px) {
     #buttonContainer{
         display: block;
-    }
-    #docIndexText{
-        margin-top: 4%;
-        padding-top: 2%;
+        width: 70vw;
     }
     #tryVarunaText{
-        margin-top: 4%;
-        padding-top: 2%;
+        margin-left: 2%;
     }
-
     #featureList{
         display: block;
-        width: 90%;
+        /* width: 50%; */
         height: auto;
     }
     .ft{
         height: 375px;
+        background-color: #fff;
     }
     img#lockIllus {
         margin-top: 50px;
     }
     #imgIllus{
-        margin-left: 50px;
+        margin-left: 10px;
         align-content: left;
         justify-content: left;
     }
     #imgText{
-        margin-left: 50px;
+        margin-left: 10px;
         text-align: left;
+        margin-top: -25px;
+        width: 75vw;
     }
 }
 
