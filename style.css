@@ -167,9 +167,20 @@ a:hover{
 
 /* small */
 @media only screen and (max-width: 899px) {
+    .line{
+        display: block;
+    }
+    #privacy, #scheduling, #user{
+        width:95%;
+    }
+    #privacy{
+        margin-left: 0px;
+        margin-top: 30px;
+    }
     #buttonContainer{
         display: block;
         width: 70vw;
+        margin-bottom: 75px;
     }
     #tryVarunaText{
         margin-left: 2%;
@@ -184,7 +195,7 @@ a:hover{
         background-color: #fff;
     }
     img#lockIllus {
-        margin-top: 50px;
+        margin-top: 0px;
     }
     #imgIllus{
         margin-left: 10px;
@@ -196,6 +207,10 @@ a:hover{
         text-align: left;
         margin-top: -25px;
         width: 75vw;
+    }
+    #description{
+        /* margin-top: 75px; */
+        width: 95%;
     }
 }
 
